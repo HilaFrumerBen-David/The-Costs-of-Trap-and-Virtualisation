@@ -1,0 +1,37 @@
+hila953, omer_siton
+Hila Frumer(318933405), Omer Siton(316123819)
+
+EX: 1
+
+FILES:
+- Makefile - A makefile to the osm.cpp.
+- osm.cpp - Implementaion of the osm.h.
+- graph - Measurements results graph.
+
+
+REMARKS:
+------
+
+ANSWERS:
+
+Q1: Assignment 1 
+
+We Used strace to understand what a program -"WhatIDo arg" is doing. 
+The steps of the program are:
+
+- Opens the directory named "Welcome".
+- Opens the directory "To" in the previous directory "Welcome" - (Welcome\To).
+- Inside the "To" directory, opens a new file named "OS2021" - (Welcome\To\OS2021).
+- Use the "fstat" function to handle the file where we want to write.
+- Writes in the file "username
+	  	      If you haven't read the course guidline yet --- do it right now! 
+	              arg".
+- Close the file.
+- Deletes the file.
+- Deletes the folder "TO".
+- Deletes the folder "Welcome".
+- Close the program and all the threads in the process.
+
+
+
+
