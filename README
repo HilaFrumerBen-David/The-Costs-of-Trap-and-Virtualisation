@@ -1,3 +1,25 @@
+Operating system code runs in "kernel mode", in which the full range of instructions of the
+architecture is allowed by the CPU. The “kernel mode” includes instructions that control the
+hardware and should not be used by normal code which runs in “user mode”. When code in “user
+mode” executes a system call, the CPU must change the execution mode. This operation is called
+a "trap".
+In the first part of the exercise we’ve seen strace - an application which inserts itself between the
+user’s code and the operating system. In the Tirgul, we’ve seen valgrind, inserting itself between
+the user’s code and memory access. Taking this principle to the extreme, virtualisation runs code
+in a simulated computer with its own OS and hardware.
+In this project, i will measure the overhead involved in traps and virtualisation.
+
+This assignment has four parts:
+1. Coding a (static) library that measures the time
+it takes to run various operations
+2. Setting up a virtual machine (VM)
+3. Setting up a container
+4. Using the library to measure times
+• Directly on the computer
+• inside the VM
+• inside the container
+and showing the results in a graph
+
 
 
 EX: 1
